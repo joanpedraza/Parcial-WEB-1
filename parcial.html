@@ -3,63 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="parcial.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Formulario punto 1</title>
+    <title>Parcial Login</title>
 </head>
-<body>
+<body onload="ocult();">
 
     <div class="row justify-content-md-center">
     
+        
     <div class="col-md-auto">
-        <h3><p class="fw-bold">Web</p>Developer</h3>
+        <h3><strong id="web">Web</strong>Developer</h3>
     </div>
 
     <div class="row justify-content-md-center">
         <div id="division" class="col-md-auto">
-            <h3>formulario de afiliación</h3>
+            
+            <p class="container text-center">formulario de afiliación</p>
+            
 
-            <form action="" method="post">
+            <form id="form" action="" method="post">
                 
                 <div class="input-group mb-3">
-                <input type="text" name="nombre" placeholder="Nombre Completo" value="" size="30" maxlength="25" />
+                <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre Completo" value="" size="30" maxlength="25" />
+                <div id="iconos" class="input-group-text"><i class="bi bi-person-fill"></i></div>
                 </div>
                 <br/>
 
                 <div class="input-group mb-3">
-                <input type="text" name="correo" placeholder="Email" value="" size="50" maxlength="45" />
+                <input id="email" class="form-control" type="text" name="correo" placeholder="Email" value="" size="50" maxlength="45" />
+                <div id="iconos" class="input-group-text"><i class="bi bi-envelope-fill"></i></div>
                 </div>
                 <br/>
 
                 <div class="input-group mb-3">
-                <input type="tel" name="telefono" placeholder="text" value="" size="20" maxlength="30">
+                <input id="telefono" class="form-control" type="tel" name="telefono" placeholder="text" value="" size="20" maxlength="30">
+                <div id="iconos" class="input-group-text"><i class="bi bi-telephone-fill"></i></div>
                 </div>
                 <br/>
 
                 <div class="input-group mb-3">
-                <input type="text" name="gustos" value="" size="20" maxlength="30">
-                <button class="btn btn-outline-success" type="button" id="button-addon2">Button</button>
+                <input id="ngustos" class="form-control" type="text" name="gustos" value="" size="20" maxlength="30">
+                <button onclick="agregar();" id="bgustos" class="btn btn-outline-success" type="button" id="button-addon2">Gustos</button>
                 </div>
                 <br/>
 
-                <button type="button" class="btn btn-outline-secondary">Aceptar</button>
+                
 
-                <button type="button" class="btn btn-outline-danger">Cancelar</button>
+                    <div id="gustos" class="row gx-2">
 
-                <fieldset>
-
-                    <div>
-                        PlaceHolder - Bandera izquierda verde
+                    <div id="bandera" class="col align-self-center">
+                        
+                        <i id="bandera1" class="bi bi-flag"></i>
+       
                     </div>
 
-                    <div>
-                        Tabla de gustos
+                    <div id="tabla" class="col-10">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                             <td><strong>Gusto</strong></td>
+                             <td><strong>%</strong></td>
+                             <td><strong>edit</strong></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            </table>
+                            
                     </div>
 
-                </fieldset>
+                    </div>
 
-                <div>
-                    <button type="button" class="btn btn-link">Ir a Site de P Web</button>
+                
+
+                <div id="submits">
+                    <br>
+                    <p id="textosubmit">Pulse Aceptar para guardar los cambios o cancelar para anularlos</p>
+                    <button onclick="envio();" id="baceptar" type="button" class="btn btn-outline-secondary">Aceptar</button>
+
+                    <button onclick="location.reload();" id="bcancel" type="button" class="btn btn-outline-danger">Cancelar</button>
+                </div>
+
+                <br>
+
+                <div id="dweb">
+                    <a id="dweb1" href="https://sites.google.com/view/dweb1-uis/home?authuser=0" target="_blank">Ir a Site de P Web</a>
                 </div>
             </form>
         </div>
@@ -67,5 +97,6 @@
 
     </div>
 
+    <script src="parcial.js"> </script>
     </body>
 </html>

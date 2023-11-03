@@ -1,0 +1,47 @@
+*{
+    box-sizing:border-box;
+    background-color: #e8ecef;
+}
+
+#web{
+    background-color: #e8ecef;
+}
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+ 	margin:auto;
+    background-color: white;
+}
+
+p,#division,#subtitulo,#tabla,#submits,#dweb,#dweb1,td,strong{
+    background-color: white;
+}
+
+#dweb1{
+    text-decoration: none;
+}
+
+#gustos{
+    background-color: #28a645;
+    border: 2px gray;
+}
+
+#iconos{
+    background-color: white;
+}
+
+i{
+    background-color: transparent;
+}
+
+#bandera1{
+    background-color: #28a645;
+    color: white;
+    text-align:justify;
+}
+
+#bandera{
+    background-color: #28a645;
+}
